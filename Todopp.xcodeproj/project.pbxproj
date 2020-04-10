@@ -13,7 +13,8 @@
 		917ACD4A243F19A40097E0F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917ACD48243F19A40097E0F7 /* Main.storyboard */; };
 		917ACD4C243F19A60097E0F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917ACD4B243F19A60097E0F7 /* Assets.xcassets */; };
 		917ACD4F243F19A60097E0F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917ACD4D243F19A60097E0F7 /* LaunchScreen.storyboard */; };
-		917ACD58243F5DD80097E0F7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917ACD57243F5DD80097E0F7 /* Item.swift */; };
+		917ACD5E2440575B0097E0F7 /* Todopp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 917ACD5C2440575B0097E0F7 /* Todopp.xcdatamodeld */; };
+		917ACD602440A7440097E0F7 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917ACD5F2440A7440097E0F7 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		917ACD4B243F19A60097E0F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		917ACD4E243F19A60097E0F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		917ACD50243F19A60097E0F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		917ACD57243F5DD80097E0F7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		917ACD5D2440575B0097E0F7 /* Todopp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todopp.xcdatamodel; sourceTree = "<group>"; };
+		917ACD5F2440A7440097E0F7 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,7 @@
 		917ACD56243F5DC70097E0F7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				917ACD57243F5DD80097E0F7 /* Item.swift */,
+				917ACD5C2440575B0097E0F7 /* Todopp.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -80,6 +82,7 @@
 		917ACD59243F62C80097E0F7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				917ACD5F2440A7440097E0F7 /* CategoryViewController.swift */,
 				917ACD46243F19A40097E0F7 /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -173,9 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				917ACD58243F5DD80097E0F7 /* Item.swift in Sources */,
+				917ACD602440A7440097E0F7 /* CategoryViewController.swift in Sources */,
 				917ACD47243F19A40097E0F7 /* TodoListViewController.swift in Sources */,
 				917ACD43243F19A40097E0F7 /* AppDelegate.swift in Sources */,
+				917ACD5E2440575B0097E0F7 /* Todopp.xcdatamodeld in Sources */,
 				917ACD45243F19A40097E0F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PWC9KX3UT;
 				INFOPLIST_FILE = Todopp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PWC9KX3UT;
 				INFOPLIST_FILE = Todopp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -372,6 +378,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		917ACD5C2440575B0097E0F7 /* Todopp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				917ACD5D2440575B0097E0F7 /* Todopp.xcdatamodel */,
+			);
+			currentVersion = 917ACD5D2440575B0097E0F7 /* Todopp.xcdatamodel */;
+			path = Todopp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 917ACD37243F19A40097E0F7 /* Project object */;
 }
