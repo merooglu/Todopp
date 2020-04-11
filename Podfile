@@ -5,4 +5,6 @@ target 'Todopp' do
 
   # Pods for Todopp
     pod 'RealmSwift'
+    pod 'SwipeCellKit'
+    
 end

@@ -17,6 +17,7 @@
 		917ACD602440A7440097E0F7 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917ACD5F2440A7440097E0F7 /* CategoryViewController.swift */; };
 		917ACD6424420BA20097E0F7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917ACD6324420BA20097E0F7 /* Category.swift */; };
 		917ACD6624420BAD0097E0F7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917ACD6524420BAD0097E0F7 /* Item.swift */; };
+		917ACD6824426CED0097E0F7 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917ACD6724426CED0097E0F7 /* SwipeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		917ACD5F2440A7440097E0F7 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		917ACD6324420BA20097E0F7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		917ACD6524420BAD0097E0F7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		917ACD6724426CED0097E0F7 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		9DBFBC639623AE566574C0D1 /* Pods_Todopp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todopp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 		917ACD59243F62C80097E0F7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				917ACD6724426CED0097E0F7 /* SwipeTableViewController.swift */,
 				917ACD5F2440A7440097E0F7 /* CategoryViewController.swift */,
 				917ACD46243F19A40097E0F7 /* TodoListViewController.swift */,
 			);
@@ -250,6 +253,7 @@
 				917ACD602440A7440097E0F7 /* CategoryViewController.swift in Sources */,
 				917ACD47243F19A40097E0F7 /* TodoListViewController.swift in Sources */,
 				917ACD43243F19A40097E0F7 /* AppDelegate.swift in Sources */,
+				917ACD6824426CED0097E0F7 /* SwipeTableViewController.swift in Sources */,
 				917ACD6624420BAD0097E0F7 /* Item.swift in Sources */,
 				917ACD45243F19A40097E0F7 /* SceneDelegate.swift in Sources */,
 				917ACD6424420BA20097E0F7 /* Category.swift in Sources */,
