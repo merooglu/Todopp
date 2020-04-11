@@ -17,7 +17,6 @@ class CategoryViewController: SwipeTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCategories()
-        tableView.rowHeight = 80.0
     }
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
@@ -64,10 +63,10 @@ class CategoryViewController: SwipeTableViewController {
         //parent classtaki updateModel(at:) fonksiyonun çalışmasını istersek aşağıdaki kodu yorumdan çıkar
 //        super.updateModel(at: indexPath)
         
-        if let categoryForDeletion = self.categories?[indexPath.row] {
+        if let categoryForDeletion = categories?[indexPath.row] {
             do {
-                try self.realm.write {
-                    self.realm.delete(categoryForDeletion)
+                try realm.write {
+                    realm.delete(categoryForDeletion)
                 }
             } catch {
                 print("Error deleting category: \(error)")
