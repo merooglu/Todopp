@@ -28,6 +28,32 @@ class TodoListViewController: SwipeTableViewController {
         super.viewDidLoad()
         // This print statement show the path that File manager information saved folder.
 //        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        if let colorHex = selectedCategory?.bgColor {
+            title = selectedCategory!.name
+            guard let navBar = navigationController?.navigationBar else { fatalError("Navigation Controller doesn't exist") }
+            if let navBarColor = UIColor(hexString: colorHex) {
+                searchBar.barTintColor = navBarColor
+                
+                if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
+                    textfield.backgroundColor = navBarColor
+                    textfield.textColor = ContrastColorOf(navBarColor, returnFlat: true)
+                    textfield.tintColor = ContrastColorOf(navBarColor, returnFlat: true)
+                    if let leftView = textfield.leftView as? UIImageView {
+                        leftView.image = leftView.image?.withRenderingMode(.alwaysTemplate)
+                        leftView.tintColor = ContrastColorOf(navBarColor, returnFlat: true)
+                    }
+                }
+                
+                navBar.barTintColor = navBarColor
+                navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: ContrastColorOf(navBarColor, returnFlat: true)]
+                navBar.tintColor = ContrastColorOf(navBarColor, returnFlat: true)
+            }
+        }
     }
 
     // Add new items

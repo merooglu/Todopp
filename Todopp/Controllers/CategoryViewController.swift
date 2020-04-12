@@ -20,6 +20,13 @@ class CategoryViewController: SwipeTableViewController {
         loadCategories()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        guard let navBar = navigationController?.navigationBar else { fatalError("Navigation Controller doesn't exist") }
+        navBar.barTintColor = UIColor(hexString: "1D9BF6")
+        navBar.backgroundColor = UIColor(hexString: "1D9BF6")
+    }
+    
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         
         var textField = UITextField()
@@ -84,8 +91,10 @@ class CategoryViewController: SwipeTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
         if let category = categories?[indexPath.row] {
-            cell.backgroundColor = UIColor(hexString: category.bgColor)
+            guard let categoryColor = UIColor(hexString: category.bgColor) else { fatalError() }
+            cell.backgroundColor = categoryColor
             cell.textLabel?.text = category.name
+            cell.textLabel?.textColor = ContrastColorOf(categoryColor, returnFlat: true)
         }
         return cell
     }

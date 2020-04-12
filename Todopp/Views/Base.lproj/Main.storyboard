@@ -39,7 +39,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Items" id="yc9-H4-Jm2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4HZ-1J-3oQ">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="Ctz-nt-GbT" id="n0t-7E-dq9"/>
                             </connections>
@@ -100,7 +99,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Todopp" id="3Yk-y9-660">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ed2-N0-oaT">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="XLo-K2-Aaj" id="hia-g0-rET"/>
                             </connections>
