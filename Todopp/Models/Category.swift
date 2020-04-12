@@ -8,9 +8,12 @@
 
 import Foundation
 import RealmSwift
+import ChameleonFramework
 
 class Category: Object {
     @objc dynamic var name: String = ""
+    @objc dynamic var bgColor: String = UIColor.randomFlat().hexValue()
     // forvard datbase reletionship
     let toItems = List<Item>()
+    
 }
